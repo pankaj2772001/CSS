@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .titleContainer{
+            box-sizing: border-box;
+            padding: 1rem;
+            background-color: dimgray;
+            font-size: 2rem;
+            text-align: center;   
+            color: whitesmoke;
+        }
+
+        .list-style{
+
+            background-color: rgba(128, 128, 128, 0.763);
+            background-color: grey;
+            list-style: none;
+            padding: 1.5rem;
+            color: whitesmoke;
+            text-align: center;
+        }
+
+
+        .link{
+
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: whitesmoke;
+        }
+
+        .link:hover{
+
+            text-decoration: underline;
+        }
+
+        .list-item{
+            display: inline;
+            margin: 0 2rem;
+
+        }
+
+         .postContainer{
+            color: black;
+            background-color: white;
+            border: 1px solid lightgray;
+            font-weight: 200;
+            
+        }
+
+        .contentContainer{
+          
+           text-align: left;
+           font-size: 1.5rem;
+           padding-left: 1rem;
+           border: 1px solid lightgray;
+           margin: 1rem 0;
+
+        }
+
+        .postsContainer{
+            border: 1px solid lightgray;
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <main style="padding: 1.5rem;">
+        <div class="titleContainer"><h1>BLOG TITLE</h1></div>
+    
+        
+        <div>
+            <ul class="list-style">
+                <li class="list-item"><a class="link" href="">Home</a></li>
+                <li class="list-item"><a class="link" href="">Categories</a></li>
+                <li class="list-item"><a class="link" href="">About</a></li>
+            </ul>
+        </div>
+        <div class="titleContainer postContainer">
+            <p >Blog Post Title</p>
+        </div>
+        <div class="contentContainer">
+            <p>Blog Post Content Preview</p>
+        </div>
+        <div class="postsContainer">
+            <p>Post 1</p>
+            <hr>
+            <p>Post 2</p>
+            <hr>
+            <p>Post 3</p>
+            <hr>
+        </div>
+        <div>
+            <ul class="list-style">
+                <li  class="list-item"><a class="link" href="">Contact</a></li>
+                <li  class="list-item"><a class="link" href="">Privacy Poilcy</a></li>
+            </ul>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
