@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+
+
+:root{
+
+    ---primary-color: blueviolet
+}
+
+        h1{
+
+            color: green;
+        }
+
+
+        #submitBtn{
+            width: 200px;
+            box-sizing: border-box;
+            
+
+        }
+
+        .centeredContainer{
+
+            width: 200px;
+            margin: auto;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        .link{
+
+            text-decoration: none;
+            
+        }
+
+        .primary-btn{
+
+            background-color: var(---primary-color);
+            border: 1px solid var(---primary-color);
+            border-radius: 0.5rem;
+            padding: 10px;
+            color: white;
+        }
+
+        .secondary-btn{
+
+            border: 1px solid var(---primary-color);
+            border-radius: 0.5rem;
+            padding: 10px;
+            color: var(---primary-color);
+
+        }
+
+        .list-non-bullet{
+
+            list-style: none;
+        }
+
+        .item-inline{
+
+            display: inline;
+            padding: 0rem 0.5rem;
+            
+            
+        }
+
+        .navigation{
+
+            background-color: var(---primary-color);
+            padding: 0.5rem;
+        }
+
+        .navBrand{
+            color: white;
+        }
+
+        .navigation .link {
+
+            color: white;
+
+        }
+
+        .navigation .list-non-bullet{
+
+            text-align: end;
+        }
+
+        .active-link{
+            font-weight: bold;
+        }
+
+    </style>
+
+    
+</head>
+<body>
+
+
+    <h1>Hello I'm learning CSS</h1>
+
+    <p style="color: orchid;">This is paragraph tag</p>
+
+
+    <h2 id="heading2">This is heading 2</h2>
+
+
+    <a href="/" class="link-1"> click here to submit.</a>
+
+
+    <div>
+
+        <button id="submitBtn">Submit</button>
+    <button>Edit</button>
+    </div>
+
+
+    <div class="container">
+        This is container
+
+        
+    </div>
+
+    <div class="centeredContainer">
+        This is centered container
+    </div>
+
+
+    <a href="" class="link primary-btn">Primary</a>
+    <a href="" class="link secondary-btn">Secondary</a>
+
+
+    <h2>Lists</h2>
+    <ul class="list-non-bullet">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+    </ul>
+
+    <h2>Inline Lists</h2>
+    <ul class="list-non-bullet">
+        <li class="item-inline">Item One</li>
+        <li class="item-inline">Item Two</li>
+        <li class="item-inline">Item Three</li>
+    </ul>
+    
+    <h2>Reversed Order Lists</h2>
+    <ol reversed>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+    </ol>
+
+    <h2>Navbar</h2>
+    <nav class="navigation ">
+        <div class="navBrand">Brand Name</div>
+
+        <ul class="list-non-bullet">
+
+            <li class="item-inline"> <a class="link active-link" href="/">Item One</a></li>
+        <li class="item-inline"><a class="link " href="/product">Item Two</a></li>
+        <li class="item-inline"><a class="link " href="/">Item Three</a></li>
+
+        </ul>
+    </nav>
+    
+</body>
+</html>
